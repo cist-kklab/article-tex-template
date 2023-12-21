@@ -1,0 +1,81 @@
+\documentclass[12pt, a4paper]{ujreport} % a4jでもOKっぽい
+
+%% ----- packages ----- %%
+% --- 図表 --- %
+%\usepackage{plautopatch}
+\usepackage[dvipdfmx]{graphicx, xcolor, pict2e} % geometory: 余白設定 graphicx: 画像挿入 xcolor: 文字の色付け pict2e: 図が描ける
+\usepackage{here} % 図の配置を指定できる
+\usepackage{float} % here と同じらしい
+\usepackage{longtable} % 表
+\usepackage{colortbl} % 表に色を付ける
+\usepackage{tabularx} % 表組みの設定
+\usepackage{enumerate} % 番号付き箇条書き
+\usepackage{lscape} % 図表回転
+\usepackage{multirow} % 表のセルに連続して同じ値を書くときにまとめて書ける(行)
+\usepackage{diagbox} % 表ヘッダ作成
+\usepackage{multicol} % 表のセルに連続して同じ値を書くときにまとめて書ける(列)
+\usepackage{wrapfig} % 図と文章を並べて書ける
+\usepackage{hhline}
+% \usepackage{graphicx}
+
+% --- 文字 --- %
+\usepackage{bm} % 太字の斜体
+\usepackage{underscore} % アンダーバー"_"を表示できる
+\usepackage{plext} % 縦書きを横書きで書ける
+\usepackage{fancyhdr} % ヘッダとフッタを編集できる
+\usepackage{ulem} % 下線が引ける
+\usepackage{cite} % 参考文献リスト"bibitem"の参照
+\usepackage{times} % フォント "times" に指定
+\usepackage{mathptmx} % 数式も含めてフォント "times" に指定
+%\usepackage{amsmath,amssymb,amsfonts} % 数式をきれいに書ける。amsfontsはフォントを指定しているが、mathptmxでフォント指定されているため、機能していない。
+%\usepackage[ipaex]{pxchfon} %文書内の和文フォントの指定(ipaexフォントが指定されている, 無くても大丈夫そう)
+\usepackage{algorithmic} % アルゴリズム(疑似コード)を書ける
+\usepackage{textcomp} % 特殊文字を書ける
+\usepackage{comment} % コメントアウト
+\usepackage{url} % url挿入
+\usepackage{uplatex}
+\usepackage{deluxe}{otf}
+% \usepackage{color}
+% \usepackage{xcolor} % 文字の色付けができる(color の上位互換?)
+
+%% --- ページ設定 --- %%
+% \usepackage[top=30truemm,bottom=30truemm,left=30truemm,right=20truemm]{geometry} % 余白設定 [b219仕様]
+
+% (すぐ上の行を使わないとき用) [~b218仕様]
+\makeatletter
+% \setlength{\voffset}{0.5truecm} % old 上余白 (1)
+% \setlength{\oddsidemargin}{7.0truemm} % old 左余白 (3): 25.4mm + 7.0mm = 32.4mm
+\setlength{\oddsidemargin}{4.6truemm} % 左余白: 25.4mm + 4.6mm = 30mm, 13pt
+% \setlength{\evensidemargin}{-5.5truemm} % old 偶数頁左余白 (3): 25.4 - 5.5mm = 19.9mm, jreportなので不要?
+% \setlength{\topmargin}{-1truecm} % old (4)
+\setlength{\topmargin}{-23pt} % -12pt+(-11pt) = -23pt, 8.1mm (4)
+% \setlength{\headsep}{2truecm} % old 上余白 (6)
+\setlength{\headsep}{25pt} % 8.81mm, 12pt+14pt=25pt (6), 上余白30mmになるように設定した
+% \setlength{\textheight}{22truecm} % old (7)
+\setlength{\textheight}{672pt} % 845pt-85pt*2, 237truemm (7), 下余白30mmになるように設定した
+% \setlength{\textwidth}{15truecm} % old (8)
+\setlength{\textwidth}{441pt} % (8) 155truemm, 右余白25mmになるように設定した
+% \setlength{\footskip}{25truemm} % old (11)
+\setlength{\footskip}{30pt} % 10.5pt+19.5pt=30pt, 10.6mm(11), ページ数の位置
+% 1pt = 0.35mm
+\makeatother
+
+
+%% ----- main ----- %%
+\begin{document}
+
+\pagenumbering{roman}
+\title{日本語タイトル\\
+  english-title}
+\author{指導教員: 小松川 こまつん\\
+  公立千歳科学技術大学 理工学部\\
+  情報システム工学科 小松川・山川・深町研究室\\
+  令和R年度\\
+  b2xxxxxx 苗字 氏名}
+\date{\today} % 日付 \today で常時その日の日付を表示
+\maketitle % タイトルの生成
+\tableofcontents % 目次
+
+%以下本文記述
+
+\end{document}
