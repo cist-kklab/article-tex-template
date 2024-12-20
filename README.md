@@ -5,7 +5,7 @@
 ※あくまでも一例です。人によってはwordで書いた、自力で調べて書いた人もいるため、必ずこの通りになっているとは限りません。
 
 ## 環境構築
-**環境構築についてはwikiを参照してください。** https://github.com/hibiki12121/KK_TexTemplate/wiki
+**環境構築についてはwikiを参照してください。** https://github.com/cist-kklab/article-tex-template/wiki
 
 ブラウザ版およびローカルでの環境構築について記しています。
 
